@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2 type="text" color="red">INPUT The YEAR</h2>
+    <input type="text" name="year" id="year">
+    <button type="button" value="" onclick="thaotac1()" id="result">RESULT</button>
+</form>
+<script>
+    function thaotac1()
+    {
+        let year1 = parseInt(document.getElementById("year").value);
+        if (year1 % 100 == 0) {
+            if (year1 % 400 == 0) {
+                document.write(year1 + "is a leap year");
+            } else {
+                document.write(year1 + "is not a leap year");
+            }
+        } else if (year1 % 4 == 0) {
+            document.write(year1 + "is a leap year");
+        } else {
+            document.write(year1 + "is not a leap year");
+        }
+    }
+</script>
+</body>
+</html>
